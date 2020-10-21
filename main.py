@@ -2,9 +2,10 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
-
 import numpy as np
 import json
+
+from dataloader import get_dataloader
 
 with open("config.json") as json_file:
     config = json.load(json_file)
@@ -12,4 +13,4 @@ with open("config.json") as json_file:
 
 
 
-print(config['cuda']['use_cuda'])
+# print("\n\n\n" + batch_idx + "\n\n\n")
